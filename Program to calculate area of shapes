@@ -1,0 +1,15 @@
+Class A;
+{
+    int d1,d2,d3;
+    A(){d1=d2=d3=0;}
+    A(int d1,int d2,int d3)
+    {
+        this.d1=d1;
+        this.d2=d2;
+        this.d3=d3;
+    }
+    void calcArea(){
+    System.out.println("Area of Shape 1 is" d1*d2*d3);}
+    int calcArea(intn c,int c1)
+System.out.println("Area of Shape 2" c*c1);
+}
