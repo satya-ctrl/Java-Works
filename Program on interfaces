@@ -1,0 +1,27 @@
+public class ClassChecker {
+ public static void main(String[] args) {
+class ExampleClass extends ParentClass implements Interface1, Interface2 {
+}
+boolean canExtend = ParentClass.class.isAssignableFrom(ExampleClass.class);
+System.out.println("ExampleClass can extend ParentClass: " + canExtend);
+boolean canImplement1 = Interface1.class.isAssignableFrom(ExampleClass.class);
+System.out.println("ExampleClass can implement Interface1: " + canImplement1);
+boolean canImplement2 = Interface2.class.isAssignableFrom(ExampleClass.class);
+System.out.println("ExampleClass can implement Interface2: " + canImplement2);
+boolean canImplementBoth = Interface1.class.isAssignableFrom(ExampleClass.class)
+&& Interface2.class.isAssignableFrom(ExampleClass.class);
+System.out.println("ExampleClass can implement both interfaces: " + canImplementBoth);
+ }
+static class ParentClass {
+}
+
+interface Interface1 {
+}
+interface Interface2 {
+
+ }
+
+}
+
+
+ 
