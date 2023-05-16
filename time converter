@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class time_convert
+{public static void main(String[] args)
+	{int mins;long yr,month,days,hours,remyr,remmon,remdays;
+		Scanner sc= new Scanner(System.in);
+	System.out.println("enter the number of mins:");
+	mins=sc.nextInt();
+	yr= mins/(365*24*60);
+	remyr=mins%(365*24*60);
+	month=remyr/(30*24*60);
+	remmon=remyr%(30*24*60);
+	days=remmon/(60*24);
+	remdays=remmon%(60*24);
+	hours=remdays/60;
+	System.out.println(days+"--"+month+"--"+yr+"--"+hours);
+
+	System.out.println();
+	}
+}
