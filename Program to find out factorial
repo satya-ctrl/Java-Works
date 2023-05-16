@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Factorial {
+	
+    
+	public static void main(string []args){
+       
+		Scanner sc = new Scanner(System.in);
+		
+		char a;
+		a = sc.next().charAt();
+
+		System.out.println(a);
+	}
+}
