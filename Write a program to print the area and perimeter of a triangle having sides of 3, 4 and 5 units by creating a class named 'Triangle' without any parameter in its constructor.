@@ -1,0 +1,15 @@
+public class Triangle {
+    int a=2,b=5,c=6;
+    
+    int s= a+b+c;
+    int ar= (s*(s-a)*(s-b)*(s-c))^1/2;
+
+    public static void main(String[] args){
+        Triangle obj= new Triangle();
+        int x=obj.s;
+        int y=obj.ar;
+        System.out.println("area is " + y +" "+ "perimeter is " + x);
+
+        
+    }  
+}
