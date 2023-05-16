@@ -1,0 +1,13 @@
+public class InterfaceChecker {
+public static void main(String[] args) {
+interface ExtendedInterface extends BaseInterface {
+ }
+ boolean canExtend = BaseInterface.class.isAssignableFrom(ExtendedInterface.class);
+System.out.println("ExtendedInterface can extend BaseInterface: " + canExtend);
+}
+
+ interface BaseInterface {
+
+}
+
+}
